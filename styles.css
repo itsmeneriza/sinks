@@ -1,35 +1,108 @@
-/* Outdated CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+    width: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+    min-height: 100;
+    min-width:fit-content;
+    margin: 0; 
 }
 
-h1 {
-    margin: 0;
+header {
+    grid-area: header;
+    background-color: rgba(22, 21, 4, 0.052);
+    padding: 20px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+header div, h1 {
+    text-align: center;
+    color: rgb(48, 37, 7);
+    background-color: transparent;
 }
 
-li {
-    margin: 0;
-    padding: 0;
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    padding:0;
+} 
+
+.navigation {
+    background-color: white;
+    max-width: fit-content;
+    padding: 10px;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+.navigation nav ul li a {
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    padding: 10px 20px;
 }
 
-img {
-    width: 100%;
+nav, ul{
+    background-color: white;
+}
+
+.navigation nav ul li {
+    list-style-type: none;
+    background-color: beige;
+    padding: 5px 0;
+    border: 1px solid #2e2c08;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.main {
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 0%;
+    width: auto;
+    border: 100%;
+}
+
+.main div {
+    width: 400px; 
+    border: 1px solid #2e2c08;
+}
+
+h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main div p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.main div img {
     height: auto;
+    border: 1px solid #2e2c08;
+    border-radius: 13px;
+    margin: 10px;
+    max-width: 100%;
+    max-height: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: rgba(22, 21, 4, 0.052);
+    padding: 20px;
 }
