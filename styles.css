@@ -44,34 +44,33 @@
     grid-template-columns: 1fr auto;
     grid-template-rows: 1ft;
     justify-content:center;
-    max-width: 100%
   }
   
   .navigation {
     background-color: rgb(234, 229, 188);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: medium;
     margin: 0 auto;
     width: 100%;
-    min-width: 120px;
+    min-width: 130px;
     max-width: 33.33vw;
     border-radius: 13px;
     padding: 1.5vw;
   }
 
   .navigation nav ul {
-    padding: 1vw;
+    padding: 0.5\vw;
     border-radius: 13px;
   }
   
   .navigation nav ul li {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: medium;
     list-style-type: none;
     background-color: beige;
     padding: 1vw 2px;
     border-radius: 5px;
-    margin: 1vw auto;
+    margin: 8px auto;
     text-wrap:wrap;
     border: 1px solid  rgb(48, 37, 7);
   }
